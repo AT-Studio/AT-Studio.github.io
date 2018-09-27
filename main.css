@@ -1,3 +1,98 @@
 #toolbar {
+	width: 100%;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+#header-pic {
+	filter: invert(1);
+}
+
+#carousel-page-one {
+	background-color: #1976D2;
+}
+
+#carousel-page-two {
+	background-color: red;
+}
+
+#carousel-page-three {
+	background-color: red;
+}
+
+.carousel-page-container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 500px;
+	width: 100%;
+}
+
+.page-picture {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.page-text {
+	width: 100%;
+}
+
+.page-picture img {
+	margin-top: auto;
+	margin-bottom: 10px;
+	height: 200px;
+}
+
+.page-text h1, h6 {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.page-text h1 {
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.page-text h6 {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.page-picture {
+		width: 50%;
+		justify-content: flex-end;
+	}
+
+	.page-text {
+		width: 50%;
+	}
+
+	.page-picture img {
+		height: 250px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.page-text h1 {
+		height: 100%;
+		margin-top: 0px;
+		font-size: 40px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.page-text h1 {
+		height: 40%;
+		padding-left: 0px;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.page-text h6 {
+		height: 60%;
+		display: flex;
+		padding-top: 20px;
+	}
 }
