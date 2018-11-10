@@ -87,6 +87,7 @@ h2 {
 #crazypage-img {
 	width: 500px;
 	height: 250px;
+	border: #BDBDBD 1px solid;
 }
 
 #crazypage-canvas-container {
@@ -99,6 +100,7 @@ h2 {
 	width: 500px;
 	height: 250px;
 	background-color: white;
+	border: #BDBDBD 1px solid;
 }
 
 .rateit-image-video-container {
