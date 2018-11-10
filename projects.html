@@ -9,14 +9,18 @@
   	<script src="js/bootstrap.min.js"></script>
   	<link href="css/bootstrap.min.css" rel="stylesheet">
   	<link href="projects.css" rel="stylesheet">
-
   	<title>AT-Studio</title>
   </head>
 
   <body>
     <nav class="toolbar navbar navbar-expand-md bg-light navbar-light">
   	  <!-- Brand -->
-  	  <a class="navbar-brand" href="#">AT-Studio</a>
+      <a class="navbar-brand" href="#">
+        <svg id="report-svg" height="100" width="150">
+          <ellipse cx="75" cy="50" rx="70" ry="40" stroke="black" stroke-width="4" fill="transparent"/>
+          <text fill="#000000" font-size="25" x="22" y="58">AT-Studio</text>
+        </svg>
+      </a>
 
   	  <!-- Toggler/collapsibe Button -->
   	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -42,10 +46,64 @@
       </div>
   	</nav>
 
-    <!-- Place-holder div until I start adding content -->
-  	<div class="no-content-container">
-  		<h2 class="no-content-text">Not yet started</h1>
-  	</div>
+    <!-- Page title -->
+    <div class="header-container">
+      <h1>Projects</h1>
+    </div>
+
+    <!-- Ball sound - plays when balls hit the border of the canvas - currently disabled -->
+    <audio id="ball-bounce" controls>
+      <source src="audio/ball-bounce.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="horizontal-break">
+    </div>
+
+    <!-- CrazyPage project -->
+    <div id="crazypage-container" class="project-container">
+      <div class="project-header-container">
+        <h2 >CrazyPage</h2>
+      </div>
+      <div id="crazypage-img-container">
+        <img id="crazypage-img" src="pictures-logos/crazypage.jpeg">
+      </div>
+      <div id="crazypage-canvas-container">
+        <canvas id="crazypage-canvas"></canvas>
+      </div>
+      <div class="project-desc-container">
+        <p><i>CrazyPage</i> is a web application where players must catch circles that are travelling around the screen at varying speeds. The higher the speed of the circle the more points a player gets for catching the circle. The application offers a single-player mode and a 2-player mode.</p>
+      </div>
+    </div>
+
+    <div class="horizontal-break">
+    </div>
+
+    <!-- RateIt project -->
+    <div class="project-container">
+      <div class="project-header-container">
+        <h2 >RateIt</h2>
+      </div>
+      <div class="rateit-image-video-container">
+        <img class="rateit-image-video" src="pictures-logos/rateitOne.png">
+      </div>
+      <div class="rateit-image-video-container">
+        <img class="rateit-image-video" src="pictures-logos/rateitTwo.png">
+      </div>
+      <div class="rateit-image-video-container">
+        <video id="rateit-video" class="rateit-image-video" width="300" height="533" autoplay>
+          <source src="pictures-logos/rateitVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-desc-container">
+        <p><i>RateIt</i> is a social media app that I created as the Capstone Project for my Android Developer Nanodegree. The app allows users to create posts (picture + caption), as well as rate the posts of other users. Similar to the Tinder app, the posts are randomized and you move from one post to another by swiping. In addition to rating posts of other users, users may also comment on posts and add them to their favorites.</p>
+      </div>
+    </div>
+
+    <div class="horizontal-break">
+    </div>
+
+    <script type="text/javascript" src="projects.js"></script>
+
   </body>
 
 </html>

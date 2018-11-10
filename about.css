@@ -28,6 +28,7 @@ h1 {
 .toolbar {
 	width: 100%;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+	padding: 0px 20px 0px 20px;
 }
 
 .nav-bar-name {
@@ -36,6 +37,10 @@ h1 {
 
 .nav-selected {
 	font-family: 'Lato';
+}
+
+.nav-link {
+	font-size: 20px;
 }
 
 .header-container {
@@ -64,6 +69,9 @@ h1 {
 
 .picture-container img {
 	width: 300px;
+}
+
+#report-svg {
 }
 
 .description-container {
