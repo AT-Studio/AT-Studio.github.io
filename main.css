@@ -23,6 +23,11 @@ a {
 	color: #0051a9;
 }
 
+.carousel-control-prev, .carousel-control-prev-icon, .icon-next, .left-carousel-control {
+	opacity: 1.0f;
+	color: white;
+}
+
 .toolbar {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
