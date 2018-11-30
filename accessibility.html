@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link href="accessibility.css" rel="stylesheet">
+
+  	<title>AT-Studio</title>
+  </head>
+
+  <body>
+    <nav class="toolbar navbar navbar-expand-md bg-light navbar-light">
+  	  <!-- Brand -->
+  	  <a class="navbar-brand" href="#">
+        <svg id="report-svg" height="100" width="150">
+          <ellipse cx="75" cy="50" rx="70" ry="40" stroke="black" stroke-width="4" fill="transparent"/>
+          <text fill="#000000" font-size="25" x="22" y="58">AT-Studio</text>
+        </svg>
+      </a>
+
+  	  <!-- Toggler/collapsibe Button -->
+  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="accessibility.html"><strong>Accessibility</strong></a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li> 
+        </ul>
+      </div>
+  	</nav>
+
+    <!-- Page title -->
+    <div class="header-container">
+      <h1>Accessbility</h1>
+    </div>
+
+    <div class="horizontal-break">
+    </div>
+
+    <!-- Accessibility Topics -->
+    <div class="topics-container">
+      <div class="topic-container dark-bg">
+        <div class="topic-title-container">
+          <h3><strong>Images</strong></h3>
+        </div>
+        <div class="topic-desc-container">
+          <p>
+            All images featured on the website have an alternative text associated with them so that users that are visually impaired or that are using text-only browsers have the opportunity to understand the information provided by the images.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizontal-break">
+      </div>
+
+      <div class="topic-container">
+        <div class="topic-title-container">
+          <h3><strong>Site Navigation</strong></h3>
+        </div>
+        <div class="topic-desc-container">
+          <p>
+            For easy and intuitive site navigation, a navigation bar is provided at the top of the screen. Within the navigation page, the text linking to the current page is in bold. This allows users with colorblindness to clearly identify which page they are currently located on. Additionally, hovering over any of the other text links in the navigation bar makes them appear bold, giving the user a visual cue that these items are indeed links.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizontal-break">
+      </div>
+
+      <div class="topic-container dark-bg">
+        <div class="topic-title-container">
+          <h3><strong>Links</strong></h3>
+        </div>
+        <div class="topic-desc-container">
+          <p>
+            All of the links within the content (below the navigation bar) of the page automatically become underlines when hovered over. This allows users with colorblindness to easily distinguish regular text from links. Furthermore, links that navigate within the website are opened within the same the same tab, allowing for easy back navigation. However, links to external sites or documents, are opened within a new tab, allowing for an intuitive browsing experience for the user.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizontal-break">
+      </div>
+
+      <div class="topic-container">
+        <div class="topic-title-container">
+          <h3><strong>Screen Size</strong></h3>
+        </div>
+        <div class="topic-desc-container">
+          <p>
+            To allow for a pleasant browsing experience on multiple screen sizes and devices (desktop, tablet, mobile) this website is being created with an emphasis on responsive design. By utilizing responsive design, users may resize their browsers to any size without sacrificing information and the clean and rich design of the website. Though responsive design has only been fully implemented on the ‘About Me’ and ‘Accessibility’ pages, this feature will ultimately be available on all pages of the website as it nears completion.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizontal-break">
+      </div>
+
+    </div>
+  </body>
+</html>
