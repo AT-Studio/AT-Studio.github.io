@@ -1,3 +1,8 @@
+<!--
+HTML file for Caesar Cipher page
+By: Alexander Thieler
+-->
+
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html lang="en-US">
@@ -15,19 +20,21 @@
   </head>
 
   <body>
+    <!-- Page title -->
     <div class="header-container">
       <h1>Caesar Cipher</h1>
     </div>
 
+    <!-- Wrapper for the plaintext section - includes the label, textarea and selection box for the shift -->
     <div class="form-wrapper">
       <div class="form-group text-form">
-        <label for="comment"><b>Plaintext:</b></label>
-        <textarea id="plaintext" class="form-control" rows="0" id="comment"></textarea>
+        <label for="plaintext"><b>Plaintext:</b></label>
+        <textarea id="plaintext" class="form-control" rows="0"></textarea>
       </div>
 
       <div class="form-group shift-form">
-        <label for="sel1"><b>Shift:</b></label>
-        <select id="plantext-shift" class="form-control" id="sel1">
+        <label for="plantext-shift"><b>Shift:</b></label>
+        <select id="plantext-shift" class="form-control">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -59,10 +66,11 @@
     </div>
     <button id="encode-button" type="button" class="btn btn-primary">Encode</button>
 
+    <!-- Wrapper for the ciphertext section - includes the label, textarea-->
     <div class="form-wrapper">
       <div class="form-group text-form">
-        <label for="comment"><b>Ciphertext:</b></label>
-        <textarea id="ciphertext"class="form-control" rows="0" id="comment"></textarea>
+        <label for="ciphertext"><b>Ciphertext:</b></label>
+        <textarea id="ciphertext"class="form-control" rows="0"></textarea>
       </div>
     </div>
     <button id="decode-button" type="button" class="btn btn-primary">Decode</button>

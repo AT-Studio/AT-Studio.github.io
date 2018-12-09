@@ -1,3 +1,8 @@
+/**
+JavaScript file for caesar.html
+By: Alexander Thieler
+*/
+
 window.onload = function() {
 
 	var plainText = document.getElementById('plaintext');
